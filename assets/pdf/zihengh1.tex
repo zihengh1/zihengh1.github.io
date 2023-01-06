@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{blue}\titlerule \vspace{-3pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{{\Large Tzu-Heng (Brian) Huang}} & Location: Madison, Wisconsin \\
+    Email: \href{mailto:thuang273@wisc.edu}{\underline{\textbf{thuang273@wisc.edu}}} & Phone Number: {\underline{\textbf{+1 608-960-6927}}} \\
+    LinkedIn Profile: \href{https://www.linkedin.com/in/zihengh1/}{\underline{\textbf{zihengh1}}} & Personal Webpage: \href{https://zihengh1.github.io/}{\underline{\textbf{zihengh1.github.io/}}}  \\
+    Authorized to work with any US employer (PR)
+\end{tabular*}
+
+\section{\textbf{\textcolor{blue}{Edu}cation}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Wisconsin, Madison (UW-Madison)}{Madison, Wisconsin}
+      {Ph.D. in Computer Science.}{Aug. 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{[Research]}{Machine Learning, Weak Supervision, and Game Theory.} \\
+        \resumeItem{[Teaching]}{TA of Data Science Programming, Intro. to AI, and Machine Learning.} \\
+      
+      \resumeItemListEnd  
+    \resumeSubheading
+      {National Chengchi University (NCCU)}{Taipei, Taiwan}
+      %{B.S. in Computer Science, Major GPA: \textbf{3.96}, Overall GPA: \textbf{3.89}.}{Sep. 2016 -- Jul. 2020}
+      {B.S. in Computer Science.}{Sep. 2016 -- Jul. 2020}
+      \resumeItemListStart
+        \resumeItem{[Research]}{Machine Learning, Data Mining, and Sensor Networks.} \\
+        \resumeItem{[Teaching]}{TA of Data Mining, Database Management System, Algorithms, and Social Computing.} \\
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+\section{\textbf{\textcolor{blue}{Res}earch Interests}}
+My research currently focuses on building efficient and effective machine learning mechanism for multiple agents to transfer/trade knowledge cooperatively and competitively. Especially, I like to perform research to pursue Pareto frontier, Nash equilibrium, and discover provable performance guarantees. I also research on developing automatic frameworks in weak supervision with foundation models. My past research interests lay in optimizing data quality in large-scale low-cost sensor networks and building machine learning models with spatio-temporal data to forecast, detect anomalies, and model sensor correlation.
+
+\section{\textbf{\textcolor{blue}{Res}earch Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Department of Computer Science, UW-Madison}{Madison, Wisconsin}
+      {Graduate Research Student at Sala Lab}{Feb. 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Modeling Models in the Model Marketplace} \\
+          {- Designed trading mechanisms for multiple agents to transfer knowledge and optimize agents' utilities.} \\
+          {- Developed effective trading policies to evaluate the value of transferred knowledge in \textbf{bayesian game theory}.} \\
+        \resumeItem{AutoWS-Bench-101: Benchmarking Automated Weak Supervision with 100 Labels [3]} \\
+          {- Contributed a new \href{https://arxiv.org/pdf/2208.14362.pdf}{\underline{benchmark}} to evaluate automated WS techniques with diverse application domains.} \\
+        \resumeItem{Automatic Label Function Design in Weak Supervision} \\
+          {- Researched on prompt-based \textbf{foundation models} for language generation and summarization.} \\
+      \resumeItemListEnd
+      {$\circ$ Advised by Prof. Frederic Sala.}
+
+    \resumeSubheading
+      {Argonne National Laboratory}{Lemont, Illinois}
+      {Research Intern at Mathematics and Computer Science Division}{Jun. 2019 - Sep. 2019}
+      \resumeItemListStart
+        \resumeItem{Pattern Identification Based Calibration Model on Time Series for Radiative Error Reduction} \\
+          {- Developed ensemble learning with \textbf{DNN} to calibrate temperature sensor for radiative error reduction.} \\
+          {- Proposed \textbf{pattern identification} on time series to improve the performance of calibration model by \textbf{25\%.}} \\
+          {- Established RESTful API to transfer sensor data between two large scale air monitoring network platforms.} \\
+      \resumeItemListEnd
+      {$\circ$ Advised by Dr. Charles Catlett and Dr. Rajesh Sankaran.}
+   
+   \resumeSubheading
+      {Department of Computer Science, NCCU}{Taipei, Taiwan}
+      {Research Assistant at Data Mining and Multimedia Lab}{Sep. 2018 - Aug. 2021}
+      \resumeItemListStart
+        \resumeItem{Early Prediction of Affected Sensors by Local Events Detected over Social Media} \\
+          {- Developed \textbf{spatial-temporal GNN} models to detect anomalies in time series for affected sensor labeling.} \\ 
+          {- Built attention-based \textbf{BiGRU/BiLSTM/TCN} models to \textbf{early predict} affected sensors with F-score of \textbf{80\%.}} \\
+        \resumeItem{Efficient and Effective Quality Audit Frameworks for Large Scale Sensor Networks [1, 2]} \\
+          {- Proposed a novel \textbf{quality audit framework} to inspect sensor performance with sensor data correlation modeling.} \\
+          {- Developed effective approximation algorithms with \textbf{CPLEX MIP solver} to optimize facility location problem.} \\
+        \resumeItem{Missing Value Estimation of Large Scale Air Monitoring Sensor Network} \\
+          {- Developed spatial-temporal \textbf{correlation models} for missing value imputation with error rate less than \textbf{10\%.}} \\
+          {- Improved correlation models through time series segmentation with \textbf{sequential clustering algorithm} by \textbf{17\%}.}
+      \resumeItemListEnd
+      {$\circ$ Advised by Prof. Man-Kwan Shan.}
+
+    \resumeSubheading
+      {Institute of Information Science, Academia Sinica}{Taipei, Taiwan}
+      {Research Intern at Network Research Lab}{Feb. 2018 - Jul. 2020}
+      \resumeItemListStart
+        \resumeItem{Real-time Air Quality Forecasting with Seq2seq Model for Edge Computing} \\
+          {- Developed accurate \textbf{Seq2seq} models to forecast multivariate time series in large scale low-cost sensor networks.} \\
+        \resumeItem{Calibrating Low-cost PM2.5 Sensors in Large Scale IoT Environmental Monitoring Systems} \\
+          {- Proposed adaptive calibration framework with regression-based models to ensure data quality of low-cost sensors.} \\
+          {- Project was awarded Student Research Scholarship granted by the Ministry of Science and Technology in Taiwan.} \\
+        \resumeItem{Environmental Sensing Hub (\href{https://magpi.raspberrypi.org/articles/raspberry-pi-weather-project-taiwan}{\underline{PiM25}})} \\
+          {- Designed a maker-based sensor hub with \textbf{over-the-air} updates to detect various environmental conditions.} \\
+          {- Deployed an \textbf{on-device pretrained audio model} to recognize environmental sounds with F-score of \textbf{75\%}.} \\
+          {- This \href{https://github.com/raspberrypi-tw/PiM25}{\underline{open-source}} project is released online and was accepted by \textbf{HKoscon'19} and \textbf{COSCUP'19} to present.} \\
+          {- PiM25 is cooperated with Raspberry Pi Org. in Taiwan and was the \textbf{first} Taiwan's project reported by \href{https://magpi.raspberrypi.org/issues/77}{\underline{Magpi}}.}
+        % \resumeItem{The First Generation of Domestic Air Sensors} \\
+        %   {- Designed a sensor hub as adapter to intergrate hardware and deployed \textbf{70+} environmental sensors in Taiwan.} \\
+        %   {- Encrypted sensor data in \textbf{Sigfox Networks} and developed regression-based calibration models to improve quality.} \\
+      \resumeItemListEnd
+      {$\circ$ Advised by Prof. Ling-Jyh Chen.}
+ 
+    \resumeSubheading
+      {College of Commerce, NCCU}{Taipei, Taiwan}
+      {Research Assistant at Human Resource Lab}{Jul. 2017 - Jul. 2020}
+      \resumeItemListStart
+        \resumeItem{Conditional Indirect Effects in Multi-level Models with Monte Carlo Simulations} \\
+          {- Developed an \href{https://changyahu.shinyapps.io/MonteCarlo/}{\underline{interactive online tool}} to estimate effects for multilevel models with \textbf{Monte Carlo} simulation.} \\
+        \resumeItem{Predicting Employee Attrition with Machine Learning Models} \\
+          {- Discovered useful knowledge rules and potential factors for Pegatron manufacturing plants to retain employees.} \\
+          {- Developed ML models \textbf{(SVM/XGBoost/LightGBM)} to predict employee turnover with accuracy over \textbf{90\%}.} \\
+        \resumeItem{Automative Assessment Tool of Employee Personality} \\
+          {- Developed an automative data visualization platform to analyze and generate employee personality assessments.} \\
+      \resumeItemListEnd
+      {$\circ$ Advised by Prof. Changya Hu.}
+  \resumeSubHeadingListEnd
+
+\section{\textbf{\textcolor{blue}{Tea}ching Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Spring 2023 at UW-Madison CS}{TA of Machine Learning (CS 760).}
+    \resumeSubItem{Fall 2022 at UW-Madison CS}{TA of Introduction to Artificial Intelligence (CS 540).}
+    \resumeSubItem{Spring 2022 at UW-Madison CS}{TA of Data Science Programming (CS 220).}
+    \resumeSubItem{Fall 2021 at UW-Madison CS}{TA of Data Science Programming (CS 220).}
+    \resumeSubItem{Spring 2021 at NCCU CS}{TA of Algorithms (Undergraduate Course).}
+    \resumeSubItem{Fall 2020 at NCCU CS}{TA of Data Mining (Graduate Course).}
+    \resumeSubItem{Fall 2020 at NCCU CS}{TA of Social Computing (Graduate Course).}
+    \resumeSubItem{Spring 2020 at NCCU CS}{TA of Database Management System (Graduate Course).}     
+    \resumeSubItem{Spring 2020 at NCCU CS}{TA of Data Mining (Graduate Course).}
+  \resumeSubHeadingListEnd
+
+\section{\textbf{\textcolor{blue}{Pub}lications}}
+{\textbf{[1]} \textbf{Tzu-Heng Huang}, Cheng-Hsien Tsai, Man-Kwan Shan, "Key Sensor Discovery for Quality Audit of Air Sensor Networks", MobiSys'20.} \\
+{\textbf{[2]} \textbf{Tzu-Heng Huang} and Man-Kwan Shan, "An Effective and Efficient Quality Audit Framework for Large Scale Sensor Networks".} \\
+{\textbf{[3]} Nicholas Roberts, Xintong Li, \textbf{Tzu-Heng Huang}, Dyah Adila, Spencer Schoenberg, Cheng-Yu Liu, Lauren Pick, Haotian Ma, Aws Albarghouthi, Frederic Sala, "AutoWS-Bench-101: Benchmarking Automated Weak Supervision with 100 Labels", NeurIPS'22.} \\
+{\textbf{[4]} Nicholas Roberts, Xintong Li, Dyah Adila, Sonia Cromp, \textbf{Tzu-Heng Huang}, Jitian Zhao, Frederic Sala, "Escaping Label Subspaces via Label Geometry", under review.}
+
+\section{\textbf{\textcolor{blue}{Inv}ited Talks}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{IoT Tutorial for High School Students}{Lecturer, invited by Nangang High School, Dec. 2019.}
+    \resumeSubItem{International Internship Sharing - Research Project}{Speaker, invited by NCCU, Sep. 2019.}
+    \resumeSubItem{LASS Conference International Session - Research Project}{Speaker, invited by Academia Sinica, Jul. 2019.}
+    \resumeSubItem{Techbang Magazine Sharing - PiM25 Project}{Speaker, invited by Techbang Magazine, Mar. 2019.}
+    \resumeSubItem{Raspberry Pi Jam - PiM25 Project}{Speaker, invited by Raspberry Pi Org. (TW), Mar. 2019.}
+    \resumeSubItem{The 24th of Raspberry Pi Meetup - PiM25 Project}{Speaker, invited by Raspberry Pi Org. (TW), Jan. 2019.}
+  \resumeSubHeadingListEnd
+
+\section{\textbf{\textcolor{blue}{Aca}demic Services}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Student Association of Taiwna (SAT), UW-Madison}{President, Jun. 2022 - May. 2023.}
+    \resumeSubItem{Student Association of Taiwan (SAT), UW-Madison}{Vice President, Jun. 2021 - May. 2022.}
+    \resumeSubItem{IEEE Global Communications Conference (IEEE GLOBECOM'20)}{Paper Reviewer, Jul. 2020.}
+  \resumeSubHeadingListEnd
+
+\section{\textbf{\textcolor{blue}{Hon}ors and \textcolor{blue}{Awa}rds}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{First-year CS Departmental Scholarship}{granted by Department of Computer Science, UW-Madison.}
+    \resumeSubItem{International Research Intern Scholarship}{granted by National Chengchi University (NCCU), Taiwan.}
+    \resumeSubItem{Undergraduate Research Scholarship}{granted by the Ministry of Science and Technology (MOST), Taiwan.}
+  \resumeSubHeadingListEnd
+
+\section{\textbf{\textcolor{blue}{Pro}gramming Skills}}
+  \resumeSubHeadingListStart
+  \item{
+    \textbf{Programming Languages}{: Python, R, C++, C, SQL, LaTeX, Shell Programming, GAMS, and VBA.}
+  }
+  \vspace{-6pt}
+  \item{
+          \textbf{Technologies}{: \textbf{Pytorch, Tensorflow, Keras}, ShinyApp, Linux, Flask, Dash, Git, and Vim.}
+  }
+  \vspace{-6pt}
+  \item{
+    \textbf{Database Management Systems}{: PostgreSQL, MySQL, and SQLite.}
+  }
+  \resumeSubHeadingListEnd
+
+\end{document}
