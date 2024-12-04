@@ -244,6 +244,11 @@
         <p>
         I am passionate about advancing machine learning to empower models to <b>learn more with less supervision</b>. I am focusing on <b>Data-centric AI</b>, particularly in designing methods for <b>multimodal data selection, multimodal data mixing, and zero-cost labeling systems</b>. These strategies are rooted in <b>weak supervision frameworks</b> to build <b>foundation models</b> with fewer human annotations. Additionally, I am developing a new notion, <b>parameter marketplace</b>, to accelerate training while monetizing parameters as a second profit center. 
         </p>
+        <!--
+        <i>
+        In Summer 2025, I’ll be joining Meta Llama GenAI team as a research intern, where I’ll focus on data selection, synthetic data generation, and advancing large-scale multimodal models!
+        </i>
+        -->
        </section>
 
         <section class="testimonials">
@@ -251,6 +256,52 @@
           <h3 class="h3 testimonials-title">Recent News</h3>
 
           <ul class="testimonials-list has-scrollbar">
+
+              <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>New Preprint for Data Selection</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                  Nov. 2024
+                  </p>
+                  <p>
+                  "Evaluating Sample Utility for Data Selection by Mimicking Model Weights"
+                  </p>
+                  <p>
+                  Paper Abstract: Foundation models rely on large-scale web-crawled datasets, which frequently contain noisy data, biases, and irrelevant content. Existing data selection techniques typically use human heuristics, downstream evaluation datasets, or specialized scoring models, and can overlook samples' utility in the training process. Instead, we propose a new approach, Mimic Score, a data quality metric that uses a pretrained reference model as a guide to assess the usefulness of data samples for training a new model. It relies on the alignment between the gradient of the new model parameters and the vector pointing toward the reference model in weight space. Samples that misalign with this direction are considered low-value and can be filtered out. Motivated by the Mimic score, we develop Grad-Mimic, a data selection framework that identifies and prioritizes useful samples, automating the selection process to create effective filters. Empirically, using Mimic scores to guide model training results in consistent performance gains across six image datasets and enhances the performance of CLIP models. Moreover, Mimic scores and their associated filters improve upon existing filtering methods and offer accurate estimation of dataset quality.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Attending NeurIPS'24 in Vancouver!</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                  Dec. 2024
+                  </p>
+                  <p>
+                  Heading to Vancouver to present Alchemist! Welcome to chat more me about automated data labeling, data selection, and more!"
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
@@ -733,6 +784,7 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Manjot Bilkhu, Frederic Sala, Javier Movellan
               </p>
+              <a href="./assets/pdf/grad-mimic.pdf" style="color: white"><u>[PDF]</u></a>
 
             </li>
 
