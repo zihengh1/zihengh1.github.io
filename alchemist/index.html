@@ -4,14 +4,10 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta name="description" content="Annotating your data with state-of-the-art large language models can be costly and opaque. What can we do about this? Simple idea: instead of prompting LLMs for labels, we distill them into programs you can run locally for free. Introducing Alchemist, a Spotlight at #NeurIPS2024!">
+  <meta property="og:title" content="Project Page"/>
+  <meta property="og:description" content="The ALCHEmist: Automated Labeling 500x CHEaper Than LLM Data Annotators"/>
+  <meta property="og:url" content="https://zihengh1.github.io/alchemist/"/>
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -139,6 +135,64 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper challenges -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Challenges</h2>
+        <div class="content has-text-justified">
+          <p>LLM-based annotators offer efficiency over costly human labelers but come with several challenges:</p>
+            <ol>
+            <li>
+              <strong>High Cost:</strong> Labeling a dataset can be expensive, particularly when each data point consists of many tokens. For example, labeling a moderately-sized dataset (8k data points) using GPT-4 costs over $1,200.
+            </li>
+            <li>
+              <strong>Lack of Extensibility:</strong> Making even small changes to specifications necessitates re-running the entire pipeline to obtain new labels. This inflexibility means the resulting labels are static.
+            </li>
+            <li>
+              <strong>Inability to Audit:</strong> API access to pretrained models does not permit inspecting most aspects of the model. Users must simply accept the provided labels with minimal additional information. Techniques that ask the model for explanations for its decisions may not be reliable.
+            </li>
+            </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper challenges -->
+
+<!-- Paper solution -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Our Solution</h2>
+        <div class="content has-text-justified">
+          <p>We address these with a new approach! Instead of direct prompts for labels, we ask LLMs to <strong>generate only a few programs to act as annotators</strong>. These programs either label directly or label a training dataset to train a distilled specialist model.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper solution -->
+
+    
+<!-- Paper edge -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Why is this good? </h2>
+        <div class="content has-text-justified">
+          <p> Generated programs allow unlimited predictions locally at nearly zero cost—the number of API calls no longer scales with dataset size. Plus, code can be inspected and corrected by SMEs, allowing easy adaptation to changes in your labeling rules.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper edge -->
+
+    
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
