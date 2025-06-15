@@ -499,7 +499,7 @@ main {
   color: var(--white-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .about-text p { margin-bottom: 16px; }
