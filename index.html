@@ -162,6 +162,31 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="news avatar" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>New Preprint for Scaling Laws</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                  Apr. 2026
+                  </p>
+                  <p>
+                    "Test-Time Scaling Makes Overtraining Compute-Optimal"
+                    </p>
+                    <p>
+                      Paper Abstract: 
+                      Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples; this creates a trade-off that pretraining scaling laws such as Chinchilla do not address. We present Train-to-Test (T²) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets. T² modernizes pretraining scaling laws with pass@k modeling used for test-time scaling, then jointly optimizes pretraining and test-time decisions. Forecasts from T² are robust over distinct modeling approaches: measuring joint scaling effect on the task loss and modeling impact on task accuracy. Across eight downstream tasks, we find that when accounting for inference cost, optimal pretraining decisions shift radically into the overtraining regime, well outside the range of standard pretraining scaling suites. We validate our results by pretraining heavily overtrained models in the optimal region that T² scaling forecasts, confirming their substantially stronger performance compared to pretraining scaling alone. Finally, as frontier LLMs are post-trained, we show that our findings survive the post-training stage, making T² scaling meaningful in modern deployments.
+                    </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
                   <img src="./assets/images/avatar-2.png" alt="news avatar" width="60" data-testimonials-avatar>
                 </figure>
 
@@ -779,12 +804,24 @@
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">Test-Time Scaling Makes Overtraining Compute-Optimal</h4>
+
+              <span>Under Submission</span>
+
+              <p class="timeline-text">
+                Nicholas Roberts, Sungjun Cho, Zhiqi Gao, <b>Tzu-Heng Huang</b>, Albert Wu, Gabriel Orlanski, Avi Trost, Kelly Buchanan, Aws Albarghouthi, Frederic Sala
+              </p>
+              <a href="https://arxiv.org/abs/2604.01411" style="color: white"><u>[PDF]</u></a>
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning</h4>
 
               <span>Under Submission</span>
 
               <p class="timeline-text">
-                Tzu-Heng Huang, Sirajul Salekin, Javier Movellan, Frederic Sala, Manjot Bilkhu 
+                <b>Tzu-Heng Huang</b>, Sirajul Salekin, Javier Movellan, Frederic Sala, Manjot Bilkhu 
               </p>
               <a href="https://arxiv.org/abs/2603.09160" style="color: white"><u>[PDF]</u></a>
             </li>
