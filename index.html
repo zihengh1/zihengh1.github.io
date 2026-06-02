@@ -152,554 +152,151 @@
 
        </section>
 
-        <section class="testimonials">
+        <section class="testimonials news-section">
 
           <h3 class="h3 testimonials-title">Recent News</h3>
 
-          <ul class="testimonials-list has-scrollbar">
+          <ul class="news-list has-scrollbar">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Recognized as Gold Reviewer in ICML'26</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  May. 2026
-                  </p>
-                  <p>
-                    "Selected as a Gold Reviewer! Thank you, ICML!"
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-06">June 2026</time>
+              <p>We release <a href="https://sprocketlab.github.io/PAJAMA" target="_blank" rel="noopener noreferrer">PAJAMA</a>, a program-as-a-judge framework for reliable, high-throughput evaluation.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/my-avatar.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>2 Papers Accepted by ICML'26</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  May. 2026
-                  </p>
-                  <p>
-                    "Grad-Mimic (a new data selection method using weight-space geometry) and CARE (a new cofounder-aware aggregation method for LLM evaluation) are accpeted by ICML'26. See you in Seoul!"
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-06">June 2026</time>
+              <p>WARP joins ICML'26 WSS with a technique that recovers data mixtures directly from model weights.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>New Preprint for Scaling Laws</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Apr. 2026
-                  </p>
-                  <p>
-                    "Test-Time Scaling Makes Overtraining Compute-Optimal"
-                    </p>
-                    <p>
-                      Paper Abstract: 
-                      Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples; this creates a trade-off that pretraining scaling laws such as Chinchilla do not address. We present Train-to-Test (T²) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets. T² modernizes pretraining scaling laws with pass@k modeling used for test-time scaling, then jointly optimizes pretraining and test-time decisions. Forecasts from T² are robust over distinct modeling approaches: measuring joint scaling effect on the task loss and modeling impact on task accuracy. Across eight downstream tasks, we find that when accounting for inference cost, optimal pretraining decisions shift radically into the overtraining regime, well outside the range of standard pretraining scaling suites. We validate our results by pretraining heavily overtrained models in the optimal region that T² scaling forecasts, confirming their substantially stronger performance compared to pretraining scaling alone. Finally, as frontier LLMs are post-trained, we show that our findings survive the post-training stage, making T² scaling meaningful in modern deployments.
-                    </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-05">May 2026</time>
+              <p>I receive an ICML'26 Gold Reviewer recognition. Thank you, ICML!</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>New Preprint for Rubric-based RL</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Mar. 2026
-                  </p>
-                  <p>
-                    "RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning"
-                    </p>
-                    <p>
-                      Paper Abstract: 
-                      Dense image captioning is critical for cross-modal alignment in vision-language pretraining and text-to-image generation, but scaling expert-quality annotations is prohibitively expensive. While synthetic captioning via strong vision-language models (VLMs) is a practical alternative, supervised distillation often yields limited output diversity and weak generalization. Reinforcement learning (RL) could overcome these limitations, but its successes have so far been concentrated in verifiable domains that rely on deterministic checkers -- a luxury not available in open-ended captioning. We address this bottleneck with RubiCap, a novel RL framework that derives fine-grained, sample-specific reward signals from LLM-written rubrics. RubiCap first assembles a diverse committee of candidate captions, then employs an LLM rubric writer to extract consensus strengths and diagnose deficiencies in the current policy. These insights are converted into explicit evaluation criteria, enabling an LLM judge to decompose holistic quality assessment and replace coarse scalar rewards with structured, multi-faceted evaluations. Across extensive benchmarks, RubiCap achieves the highest win rates on CapArena, outperforming supervised distillation, prior RL methods, human-expert annotations, and GPT-4V-augmented outputs. On CaptionQA, it demonstrates superior word efficiency: our 7B model matches Qwen2.5-VL-32B-Instruct, and our 3B model surpasses its 7B counterpart. Remarkably, using the compact RubiCap-3B as a captioner produces stronger pretrained VLMs than those trained on captions from proprietary models.
-                    </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-05">May 2026</time>
+              <p>Two papers join ICML'26: <a href="https://arxiv.org/abs/2501.06708" target="_blank" rel="noopener noreferrer">Grad-Mimic</a>, for data selection using weight-space geometry, and <a href="https://arxiv.org/abs/2603.00039" target="_blank" rel="noopener noreferrer">CARE</a>, for confounder-aware LLM evaluation.</p>
             </li>
 
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Interning in Apple</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Oct. 2025
-                  </p>
-                  <p>
-                  This winter, I join Apple again as a research intern, working with Javier Movellan and Manjot Bilkhu on automated verifiers for open-ended tasks in visual reinforcement learning.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-04">Apr. 2026</time>
+              <p>Our new <a href="https://arxiv.org/abs/2604.01411" target="_blank" rel="noopener noreferrer">scaling laws</a> preprint studies how to jointly optimize pretraining and test-time compute.</p>
             </li>
 
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paper Accepcted by NeurIPS'25</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Sep. 2025
-                  </p>
-                  <p>
-                  "Shrinking the Generation-Verification Gap with Weak Verifiers"
-                  </p>
-                  <p>
-                  Paper Abstract: Verifiers can improve language model capabilities by scoring and ranking responses from generated candidates. Currently, high-quality verifiers are either unscalable (e.g., humans) or limited in utility (e.g., tools like Lean). While LM judges and reward models have become broadly useful as general-purpose verifiers, a significant performance gap remains between them and oracle verifiers (verifiers with perfect accuracy). To help close this gap, we introduce Weaver, a framework for designing a strong verifier by combining multiple weak, imperfect verifiers. We find weighted ensembles of verifiers, which typically require learning from labeled data, significantly outperform unweighted combinations due to differences in verifier accuracies. To reduce dependency on labeled data, Weaver leverages weak supervision to estimate each verifier's accuracy and combines outputs into a unified score that better reflects true response quality. However, directly applying weak supervision algorithms poses challenges, including inconsistent verifier output formats and handling low-quality verifiers. Weaver addresses these using dataset statistics to normalize outputs and filter specific verifiers. We study Weaver's effectiveness in test-time repeated sampling, where a model generates multiple candidate responses and selects one. Our evaluations show Weaver significantly improves over Pass@1-performance when selecting the first candidate-across reasoning and math tasks, achieving o3-mini-level accuracy with Llama 3.3 70B Instruct as generator, and an ensemble of 70B or smaller judge and reward models as verifiers (87.7% average). This gain mirrors the jump between GPT-4o and o3-mini (69.0% vs. 86.7%), which required extensive finetuning and post-training. To reduce computational costs of verifier ensembles, we train a 400M cross-encoder using Weaver's combined output scores.
-                  </p>
-                </div>
-
-              </div>
-              </li>
-
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>New Preprint for LLM evaluation</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Jun. 2025
-                  </p>
-                  <p>
-                  "Time To Impeach LLM-as-a-Judge: Programs are the Future of Evaluation"
-                  </p>
-                  <p>
-                  Paper Abstract: Large language models (LLMs) are widely used to evaluate the quality of LLM generations and responses, but this leads to significant challenges: high API costs, uncertain reliability, inflexible pipelines, and inherent biases. To address these, we introduce PAJAMA (Program-As-a-Judge for Automated Model Assessment), a new alternative that uses LLMs to synthesize executable judging programs instead of directly scoring responses. These synthesized programs can be stored and run locally, costing orders of magnitude less while providing interpretable, and auditable judging logic that can be easily adapted. Program-based judges mitigate biases, improving judgment consistency by 15.83% and reducing biased responses by 23.7% on average compared to a Qwen2.5-14B-based LLM-as-a-judge. When program judgments are distilled into a model, PAJAMA outperforms LLM-as-a-judge on the challenging CHAT-HARD subset of RewardBench, outperforming metrics by 2.19% on Prometheus and 8.67% on the JudgeLM dataset, all at three orders of magnitude lower cost.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-03">Mar. 2026</time>
+              <p>We introduce <a href="https://arxiv.org/abs/2603.09160" target="_blank" rel="noopener noreferrer">RubiCap</a>, a rubric-guided RL method for dense image captioning.</p>
             </li>
 
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>ICML'25 Workshop Oral Paper</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Jun. 2025
-                  </p>
-                  <p>
-                  Our work, "Evaluating Sample Utility For Efficient Data Selection by Mimicking Model Weights", has been selected as an oral paper in ICML'25 DataWorld workshop. We introduce a new data utility metric and data selection framework for multimodal models. See you in Vancouver!
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-02">Feb. 2026</time>
+              <p>We organize <a href="https://data-foundations-of-ai.github.io/" target="_blank" rel="noopener noreferrer">Data Foundations of AI</a>, a new online seminar to support the data-centric AI community.</p>
             </li>
 
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Interning in Meta AI</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  May. 2025
-                  </p>
-                  <p>
-                  This summer, I join Meta as a research intern, working with David Kant, Yiting Lu, Sang Michael Xie and Ernie Chang on synthetic data generation for multimodal models.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2026-01">Jan. 2026</time>
+              <p>I give four talks about foundation data recipes in Taiwan, hosted by TSMC, NTU, NTHU, and NYCU.</p>
             </li>
 
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Passed Ph.D. preliminary exam</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Apr. 2025
-                  </p>
-                  <p>
-                  Passed my preliminary exam! The talk is titled “Data Recipes: Automated Labeling and Efficient Selection.” Many thanks to professors in my committee---Frederic Sala, Ramya Vinayak, and Kirthi Kandasamy.
-                  </p>
-                </div>
-
-              </div>
-              </li>
-
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/my-avatar.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>New Preprint for Online Data Mixing</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Mar. 2025
-                  </p>
-                  <p>
-                  "R&B: Domain Regrouping and Data Mixture Balancing for Efficient Foundation Model Training"
-                  </p>
-                  <p>
-                  Paper Abstract: Data mixing strategies have successfully reduced the costs involved in training language models. While promising, such methods suffer from two flaws. First, they rely on predetermined data domains (e.g., data sources, task types), which may fail to capture critical semantic nuances, leaving performance on the table. Second, these methods scale with the number of domains in a computationally prohibitive way. We address these challenges via R&B, a framework that re-partitions training data based on semantic similarity to create finer-grained domains. and efficiently optimizes the data composition by leveraging a Gram matrix induced by domain gradients obtained throughout training. Unlike prior works, it removes the need for additional compute to obtain evaluation information such as losses or gradients. We analyze this technique under standard regularity conditions and provide theoretical insights that justify R&B's effectiveness compared to non-adaptive mixing approaches. Empirically, we demonstrate the effectiveness of R&B on five diverse datasets ranging from natural language to reasoning and multimodal tasks. With as little as 0.01% additional compute overhead, R&B matches or exceeds the performance of state-of-the-art data mixing strategies.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-10">Oct. 2025</time>
+              <p>I return to Apple as a research intern, building automated verifiers for open-ended visual RL.</p>
             </li>
 
-              <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>New Preprint for Data Selection</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Nov. 2024
-                  </p>
-                  <p>
-                  "Evaluating Sample Utility for Data Selection by Mimicking Model Weights"
-                  </p>
-                  <p>
-                  Paper Abstract: Foundation models rely on large-scale web-crawled datasets, which frequently contain noisy data, biases, and irrelevant content. Existing data selection techniques typically use human heuristics, downstream evaluation datasets, or specialized scoring models, and can overlook samples' utility in the training process. Instead, we propose a new approach, Mimic Score, a data quality metric that uses a pretrained reference model as a guide to assess the usefulness of data samples for training a new model. It relies on the alignment between the gradient of the new model parameters and the vector pointing toward the reference model in weight space. Samples that misalign with this direction are considered low-value and can be filtered out. Motivated by the Mimic score, we develop Grad-Mimic, a data selection framework that identifies and prioritizes useful samples, automating the selection process to create effective filters. Empirically, using Mimic scores to guide model training results in consistent performance gains across six image datasets and enhances the performance of CLIP models. Moreover, Mimic scores and their associated filters improve upon existing filtering methods and offer accurate estimation of dataset quality.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-09">Sep. 2025</time>
+              <p><a href="https://www.arxiv.org/abs/2506.18203" target="_blank" rel="noopener noreferrer">WEAVER</a> joins NeurIPS'25 with a framework that aggregates weak verifiers into a strong one.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Attending NeurIPS'24 in Vancouver!</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Dec. 2024
-                  </p>
-                  <p>
-                  Heading to Vancouver to present Alchemist! Welcome to chat more me about automated data labeling, data selection, and more!"
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-08">Aug. 2025</time>
+              <p>I give a talk about automated labeling and data selection at Stanford's Scaling Intelligence Lab.</p>
             </li>
 
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>NeurIPS'24 Spotlight Paper</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Sep. 2024
-                  </p>
-                  <p>
-                  Alchemist has been accepted in NeurIPS as a spotlight paper.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-06">Jun. 2025</time>
+              <p>We share early results for <a href="https://arxiv.org/abs/2506.10403" target="_blank" rel="noopener noreferrer">PAJAMA</a>, a program distillation approach to automated evaluation.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paper Accepcted by NeurIPS'24</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Sep. 2024
-                  </p>
-                  <p>
-                  "The ALCHEmist: Automated Labeling 500x CHEaper Than LLM Data Annotators"
-                  </p>
-                  <p>
-                  Paper Abstract: Large pretrained models can be used as annotators, helping replace or augment crowdworkers and enabling distilling generalist models into smaller specialist models. Unfortunately, this comes at a cost: employing top-of-the-line models often requires paying thousands of dollars for API calls, while the resulting datasets are static and challenging to audit. To address these challenges, we propose a simple alternative: rather than directly querying labels from pretrained models, we task models to generate programs that can produce labels. These programs can be stored and applied locally, re-used and extended, and cost orders of magnitude less. Our system, Alchemist, obtains comparable to or better performance than large language model-based annotation in a range of tasks for a fraction of the cost: on average, improvements amount to a 12.9% enhancement while the total labeling costs across all datasets are reduced by a factor of approximately 500×.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-06">Jun. 2025</time>
+              <p><a href="https://arxiv.org/abs/2501.06708" target="_blank" rel="noopener noreferrer">Grad-Mimic</a> receives an oral presentation at the ICML'25 DataWorld workshop.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/my-avatar.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Interning in Apple</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  May. 2024
-                  </p>
-                  <p>
-                  This summer, I join Apple as a AIML research intern, working with Javier Movellan and Manjot Bilkhu on data-centric AI for multimodal models.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-05">May 2025</time>
+              <p>I join Meta GenAI as a research intern, working on synthetic data generation and off-policy distillation.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paper Accepted by NeurIPS'23</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Sep. 2023
-                  </p>
-                  <p>
-                  "Train 'n Trade: Foundations of Parameter Markets"
-                  </p>
-                  <p>
-                  Paper Abstract: Organizations typically train large models individually. This is costly and time-consuming, particularly for large-scale foundation models. Such vertical production is known to be suboptimal. Inspired by this economic insight, we ask whether it is possible to leverage others' expertise by trading the constituent parts in models, i.e., sets of weights, as if they were market commodities. While recent advances in aligning and interpolating models suggest that doing so may be possible, a number of fundamental questions must be answered to create viable parameter markets. In this work, we address these basic questions, propose a framework containing the infrastructure necessary for market operations to take place, study strategies for exchanging parameters, and offer means for agents to monetize parameters. Excitingly, compared to agents who train siloed models from scratch, we show that it is possible to mutually gain by using the market, even in competitive settings. This suggests that the notion of parameter markets may be a useful paradigm for improving large-scale model training in the future.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-04">Apr. 2025</time>
+              <p>I pass my Ph.D. preliminary exam. Many thanks to my graduate committee!</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paper Accepted by NeurIPS'23</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Sep. 2023
-                  </p>
-                  <p>
-                  "Geometry-Aware Adaptation for Pretrained Models"
-                  </p>
-                  <p>
-                  Paper Abstract: Machine learning models---including prominent zero-shot models---are often trained on datasets whose labels are only a small proportion of a larger label space. Such spaces are commonly equipped with a metric that relates the labels via distances between them. We propose a simple approach to exploit this information to adapt the trained model to reliably predict new classes---or, in the case of zero-shot prediction, to improve its performance---without any additional training. Our technique is a drop-in replacement of the standard prediction rule, swapping with the Fréchet mean. We provide a comprehensive theoretical analysis for this approach, studying (i) learning-theoretic results trading off label space diameter, sample complexity, and model dimension, (ii) characterizations of the full range of scenarios in which it is possible to predict any unobserved class, and (iii) an optimal active learning-like next class selection procedure to obtain optimal training classes for when it is not possible to predict the entire range of unobserved classes. Empirically, using easily-available external metrics, our proposed approach, Loki, gains up to 29.7% relative improvement over SimCLR on ImageNet and scales to hundreds of thousands of classes. When no such metric is available, Loki can use self-derived metrics from class embeddings and obtains a 10.5% improvement on pretrained zero-shot models such as CLIP.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-04">Apr. 2025</time>
+              <p>I give a talk about spatio-temporal modeling for sensor networks at NTUT in Taiwan.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paper Accepted by ICCV'23 Datacomp Workshop</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Sep. 2023
-                  </p>
-                  <p>
-                  "Multimodal Data Curation via Object Detection and Filter Ensembles"
-                  </p>
-                  <p>
-                  Paper Abstract: We propose an approach for curating multimodal data that we used for our entry in the 2023 DataComp competition filtering track. Our technique combines object detection and weak supervision-based ensembling. In the first of two steps in our approach, we employ an out-of-the-box zero-shot object detection model to extract granular information and produce a variety of filter designs. In the second step, we employ weak supervision to ensemble filtering rules. This approach results in a 4% performance improvement when compared to the best-performing baseline, producing the top-ranking position in the small scale track at the time of writing. Furthermore, in the medium scale track, we achieve a noteworthy 4.2% improvement over the baseline by simply ensembling existing baselines with weak supervision.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2025-03">Mar. 2025</time>
+              <p>We introduce <a href="https://arxiv.org/abs/2505.00358" target="_blank" rel="noopener noreferrer">R&amp;B</a>, a data mixing method for efficient model training.</p>
             </li>
 
-             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/my-avatar.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rank #1 in the Datacomp'23 competition</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Aug. 2023
-                  </p>
-                  <p>
-                  Top-ranking position in the ICCV Datacomp'23 competition (small-scale filtering track).
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2024-11">Nov. 2024</time>
+              <p>We introduce <a href="https://arxiv.org/abs/2501.06708" target="_blank" rel="noopener noreferrer">Grad-Mimic</a>, a data selection method using model weight geometry.</p>
             </li>
 
-             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paper Accepted by ICLR'23 DL4C Workshop</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Mar. 2023
-                  </p>
-                  <p>
-                  "ScriptoriumWS: A Code Generation Assistant for Weak Supervision"
-                  </p>
-                  <p>
-                  Paper Abstract: Weak supervision is a popular framework for overcoming the labeled data bottleneck: the need to obtain labels for training data. In weak supervision, multiple noisy-but-cheap sources are used to provide guesses of the label and are aggregated to produce high-quality pseudolabels. These sources are often expressed as small programs written by domain experts—and so are expensive to obtain. Instead, we argue for using code-generation models to act as coding assistants for crafting weak supervision sources. We study prompting strategies to maximize the quality of the generated sources, settling on a multi-tier strategy that incorporates multiple types of information. We explore how to best combine hand-written and generated sources. Using these insights, we introduce ScriptoriumWS, a weak supervision system that, when compared to hand-crafted sources, maintains accuracy and greatly improves coverage.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2024-09">Sep. 2024</time>
+              <p><a href="https://arxiv.org/abs/2407.11004" target="_blank" rel="noopener noreferrer">Alchemist</a> appears at NeurIPS'24 as a spotlight, offering a 500x cheaper way to label data with programs.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/my-avatar.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paper Accepted by NeurIPS'22</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Sep. 2022
-                  </p>
-                  <p>
-                  "AutoWS-Bench-101: Benchmarking Automated Weak Supervision with 100 Labels".
-                  </p>
-                  <p>
-                  Paper Abstract: Weak supervision (WS) is a powerful method to build labeled datasets for training supervised models in the face of little-to-no labeled data. It replaces hand-labeling data with aggregating multiple noisy-but-cheap label estimates expressed by labeling functions (LFs). While it has been used successfully in many domains, weak supervision's application scope is limited by the difficulty of constructing labeling functions for domains with complex or high-dimensional features. To address this, a handful of methods have proposed automating the LF design process using a small set of ground truth labels. In this work, we introduce AutoWS-Bench-101: a framework for evaluating automated WS (AutoWS) techniques in challenging WS settings---a set of diverse application domains on which it has been previously difficult or impossible to apply traditional WS techniques.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2024-05">May 2024</time>
+              <p>I join Apple as a research intern, focusing on data curation and data mixing for pretraining.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>President of SAT at UW-Madison</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  May. 2022
-                  </p>
-                  <p>
-                  Our main mission is to bring taiwanese students together from all fields of study for recreational, academic, and cultural purposes.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2023-10">Oct. 2023</time>
+              <p>I receive a NeurIPS'23 Scholar Award.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="news avatar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Joining CS Dept at UW-Madison</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  Aug. 2021
-                  </p>
-                  <p>
-                  Here is the start of my Ph.D. journey. Mamba mentality always.
-                  </p>
-                </div>
-
-              </div>
+            <li class="news-item">
+              <time class="news-date" datetime="2023-09">Sep. 2023</time>
+              <p>Two papers appear at NeurIPS'23: <a href="https://arxiv.org/abs/2312.04740" target="_blank" rel="noopener noreferrer">Train 'n Trade</a>, on parameter marketplaces for trading model weights, and <a href="https://arxiv.org/abs/2307.12226" target="_blank" rel="noopener noreferrer">Loki</a>, on geometry-aware adaptation in prediction space.</p>
             </li>
 
+            <li class="news-item">
+              <time class="news-date" datetime="2023-09">Sep. 2023</time>
+              <p>Our <a href="https://arxiv.org/abs/2401.12225" target="_blank" rel="noopener noreferrer">data curation strategy</a> appears at the ICCV'23 DataComp after ranking first on their leaderboard.</p>
+            </li>
+
+            <li class="news-item">
+              <time class="news-date" datetime="2023-03">Mar. 2023</time>
+              <p><a href="https://www.arxiv.org/abs/2502.12366" target="_blank" rel="noopener noreferrer">ScriptoriumWS</a> appears at the ICLR'23 DL4C as a code generation assistant for weak supervision.</p>
+            </li>
+
+            <li class="news-item">
+              <time class="news-date" datetime="2022-09">Sep. 2022</time>
+              <p><a href="https://arxiv.org/abs/2208.14362" target="_blank" rel="noopener noreferrer">AutoWS-Bench-101</a> appears at NeurIPS'22, a new benchmark for automated weak supervision.</p>
+            </li>
+
+            <li class="news-item">
+              <time class="news-date" datetime="2022-05">May 2022</time>
+              <p>I serve as president of the Student Association of Taiwan (SAT) at UW-Madison.</p>
+            </li>
+
+            <li class="news-item">
+              <time class="news-date" datetime="2021-09">Sep. 2021</time>
+              <p>I receive a First-year Departmental Scholarship from UW-Madison.</p>
+            </li>
+
+            <li class="news-item">
+              <time class="news-date" datetime="2021-08">Aug. 2021</time>
+              <p>I begin my Ph.D. journey in the CS department at UW-Madison.</p>
+            </li>
           </ul>
 
         </section>
@@ -865,8 +462,8 @@
               <p class="timeline-text">
                 Nicholas Roberts, Sungjun Cho, Zhiqi Gao, <b>Tzu-Heng Huang</b>, Albert Wu, Gabriel Orlanski, Avi Trost, Kelly Buchanan, Aws Albarghouthi, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2604.01411" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/2041144772073591200?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2604.01411" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://x.com/zihengh1/status/2041144772073591200?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
             </li>
 
             <li class="timeline-item">
@@ -878,8 +475,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Sirajul Salekin, Javier Movellan, Frederic Sala, Manjot Bilkhu 
               </p>
-              <a href="https://arxiv.org/abs/2603.09160" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/2032506508722790852?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2603.09160" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://x.com/zihengh1/status/2032506508722790852?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
             </li>
 
             
@@ -892,7 +489,7 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>*, Aditya Goyal*, John Cooper, Frederic Sala
               </p>
-              <a href="https://github.com/SprocketLab/Domain-mixture-estimation" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
+              <a href="https://github.com/SprocketLab/Domain-mixture-estimation" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
             </li>
 
             <li class="timeline-item">
@@ -905,9 +502,9 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Manjot Bilkhu, John Cooper, Frederic Sala, Javier Movellan
               </p>
-              <a href="https://arxiv.org/abs/2501.06708" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/zihengh1/Grad-Mimic/tree/main" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://x.com/zihengh1/status/1943361027162452025?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2501.06708" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/zihengh1/Grad-Mimic/tree/main" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://x.com/zihengh1/status/1943361027162452025?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
             </li>
             
             <li class="timeline-item">
@@ -919,9 +516,9 @@
               <p class="timeline-text">
                 Jitian Zhao, Changho Shin, <b>Tzu-Heng Huang</b>, Satya Sai Srinath Namburi GNVV, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2603.00039" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/CARE" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2603.00039" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/CARE" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
             </li>
 
             <li class="timeline-item">
@@ -933,9 +530,9 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Harit Vishwakarma, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2506.10403" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/PAJAMA/tree/main" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://x.com/zihengh1/status/1946002098958860576?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2506.10403" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/PAJAMA/tree/main" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://x.com/zihengh1/status/1946002098958860576?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
             </li>
 
             <li class="timeline-item">
@@ -949,10 +546,10 @@
               <p class="timeline-text">
                 Jon Saad-Falcon, E. Kelly Buchanan, Mayee F Chen, <b>Tzu-Heng Huang</b>, Brendan McLaughlin, Tanvir Bhathal, Shang Zhu, Ben Athiwaratkun, Frederic Sala, Scott Linderman, Azalia Mirhoseini, Christopher Re
               </p>
-              <a href="https://www.arxiv.org/abs/2506.18203" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/HazyResearch/scaling-verification" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://hazyresearch.stanford.edu/blog/2025-06-18-weaver" style="color: white; display: inline-block; margin-right: 10px;"><u>[BLOG]</u></a>
-              <a href="https://x.com/JonSaadFalcon/status/1937600479527317802?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://www.arxiv.org/abs/2506.18203" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/HazyResearch/scaling-verification" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://hazyresearch.stanford.edu/blog/2025-06-18-weaver" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[BLOG]</u></a>
+              <a href="https://x.com/JonSaadFalcon/status/1937600479527317802?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
             </li>
 
@@ -966,9 +563,9 @@
               <p class="timeline-text">
                 Jitian Zhao, Changho Shin, <b>Tzu-Heng Huang</b>, Satya Sai Srinath Namburi GNVV, Frederic Sala
               </p>
-              <a href="https://openreview.net/pdf?id=Ou53DNvjx7" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/CARE" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://openreview.net/pdf?id=Ou53DNvjx7" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/CARE" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
             </li>
 
@@ -982,8 +579,8 @@
               <p class="timeline-text">
                 Albert Ge, <b>Tzu-Heng Huang</b>, John Cooper, Avi Trost, Ziyi Chu, Satya Sai Srinath Namburi GNVV, Ziyang Cai, Kendall Park, Nicholas Roberts, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2505.00358" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/1920558594224775242?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2505.00358" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://x.com/zihengh1/status/1920558594224775242?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
             </li>
 
@@ -997,10 +594,10 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Catherine Cao, Vaishnavi Bhargava, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2407.11004" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/Alchemist" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://sprocketlab.github.io/posts/2025/02/alchemist-automated-labeling/" style="color: white; display: inline-block; margin-right: 10px;"><u>[BLOG]</u></a>
-              <a href="https://x.com/zihengh1/status/1843401287351824783?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2407.11004" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/Alchemist" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://sprocketlab.github.io/posts/2025/02/alchemist-automated-labeling/" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[BLOG]</u></a>
+              <a href="https://x.com/zihengh1/status/1843401287351824783?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
             </li>
 
@@ -1014,8 +611,8 @@
               <p class="timeline-text">
                 Wenxuan Tan, Nicholas Roberts, <b>Tzu-Heng Huang</b>, Jitian Zhao, John Cooper, Samuel Guo, Chengyu Duan, Frederic Sala
               </p>
-              <a href="https://openreview.net/pdf?id=AzTz27n6O2" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/sparse_matrix_fine_tuning" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
+              <a href="https://openreview.net/pdf?id=AzTz27n6O2" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/sparse_matrix_fine_tuning" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
 
             </li>
 
@@ -1028,8 +625,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Harit Vishwakarma, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2312.04740" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/1734435767626146209?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2312.04740" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://x.com/zihengh1/status/1734435767626146209?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
 
             </li>
@@ -1043,9 +640,9 @@
               <p class="timeline-text">
                 Nicholas Roberts, Xintong Li, Dyah Adila, Sonia Cromp, <b>Tzu-Heng Huang</b>, Jitian Zhao, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2307.12226" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/loki" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://x.com/nick11roberts/status/1685096037349031936?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2307.12226" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/loki" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://x.com/nick11roberts/status/1685096037349031936?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
             </li>
 
@@ -1060,8 +657,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang*</b>, Changho Shin*, Sui Jiet Tay, Dyah Adila, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2401.12225" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/1708990986104254509?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2401.12225" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://x.com/zihengh1/status/1708990986104254509?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
             </li>
 
@@ -1075,8 +672,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Catherine Cao, Spencer Schoenberg, Harit Vishwakarma, Nicholas Roberts, Frederic Sala
               </p>
-              <a href="https://www.arxiv.org/abs/2502.12366" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/Alchemist" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
+              <a href="https://www.arxiv.org/abs/2502.12366" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/Alchemist" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
 
 
             </li>
@@ -1090,10 +687,10 @@
               <p class="timeline-text">
                 Nicholas Roberts, Xintong Li, <b>Tzu-Heng Huang</b>, Dyah Adila, Spencer Schoenberg, Cheng-Yu Liu, Lauren Pick, Haotian Ma, Aws Albarghouthi, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2208.14362" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/AutoWS-Bench-101" style="color: white; display: inline-block; margin-right: 10px;"><u>[CODE]</u></a>
-              <a href="https://sprocketlab.github.io/posts/2022/11/autows-bench-101/" style="color: white; display: inline-block; margin-right: 10px;"><u>[BLOG]</u></a>
-              <a href="https://x.com/nick11roberts/status/1596252979778166788?s=20" style="color: white; display: inline-block; margin-right: 10px;"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2208.14362" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://github.com/SprocketLab/AutoWS-Bench-101" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://sprocketlab.github.io/posts/2022/11/autows-bench-101/" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[BLOG]</u></a>
+              <a href="https://x.com/nick11roberts/status/1596252979778166788?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
 
 
             </li>
@@ -1107,7 +704,7 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Cheng-Hsien Tsai, Man-Kwan Shan
               </p>
-              <a href="https://dl.acm.org/doi/pdf/10.1145/3386901.3396606" style="color: white; display: inline-block; margin-right: 10px;"><u>[PDF]</u></a>
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3386901.3396606" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
 
 
             </li>
