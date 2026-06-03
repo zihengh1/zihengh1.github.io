@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tzu-Heng (Brian) Huang's academic homepage, research, publications, experience, and CV.">
   <title>Tzu-Heng (Brian) Huang</title>
 
   <link rel="shortcut icon" href="./assets/images/ninja.jpg" type="image/x-icon">
@@ -34,7 +34,7 @@
           <p class="title"><b>CS Ph.D. Student</b></p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn" type="button" aria-expanded="false" data-sidebar-btn>
           <span>Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -82,25 +82,25 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="./assets/pdf/zihengh1.pdf" class="social-link">
+            <a href="./assets/pdf/zihengh1.pdf" class="social-link" aria-label="CV">
               <ion-icon name="document-text"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://twitter.com/zihengh1" class="social-link">
+            <a href="https://twitter.com/zihengh1" class="social-link" aria-label="Twitter">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
            <li class="social-item">
-            <a href="https://www.linkedin.com/in/zihengh1/" class="social-link">
+            <a href="https://www.linkedin.com/in/zihengh1/" class="social-link" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://scholar.google.com/citations?user=yIZ8NCQAAAAJ&hl=en" class="social-link">
+            <a href="https://scholar.google.com/citations?user=yIZ8NCQAAAAJ&hl=en" class="social-link" aria-label="Google Scholar">
               <ion-icon name="school"></ion-icon>
             </a>
           </li>
@@ -113,16 +113,16 @@
 
     <div class="main-content">
 
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary">
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" type="button" aria-controls="about" aria-current="page" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Research</button>
+            <button class="navbar-link" type="button" aria-controls="research" data-nav-link>Research</button>
           </li>
 
         </ul>
@@ -130,7 +130,7 @@
       </nav>
 
 
-      <article class="about active" data-page="about">
+      <article class="about active" id="about" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -147,14 +147,14 @@
         Before joining UW–Madison, I earned my B.S. degree in CS from National Chengchi University (NCCU), where I was advised by Man-Kwan Shan and Ling-Jyh Chen. My early research focused on spatio-temporal machine learning and large-scale sensor networks.
         </p>
         <p>
-        My current research focuses on data-centric AI for multimodal models, with the goal of enabling systems to learn more from less but higher-quality supervision. Several data lifecycle projects I have worked on, including <b>multimodal data selection, universal data mixing, zero-cost labeling systems, and LLM verification through synthetic programs and  rubrics</b>. These efforts are grounded in <b>weak supervision frameworks</b> to build foundation models with fewer human annotations. Additionally, I am exploring a new notion, <b>parameter marketplace</b>, to accelerate training while monetizing parameters as a second profit center.
+        My current research focuses on data-centric AI for multimodal models, with the goal of enabling systems to learn more from less but higher-quality supervision. I have worked on several data lifecycle projects, including <b>multimodal data selection, universal data mixing, zero-cost labeling systems, and LLM verification through synthetic programs and rubrics</b>. These efforts are grounded in <b>weak supervision frameworks</b> to build foundation models with fewer human annotations. Additionally, I am exploring a new notion, <b>parameter marketplace</b>, to accelerate training while monetizing parameters as a second profit center.
         </p>
 
        </section>
 
-        <section class="testimonials news-section">
+        <section class="news-section">
 
-          <h3 class="h3 testimonials-title">Recent News</h3>
+          <h3 class="h3 news-title">Recent News</h3>
 
           <ul class="news-list has-scrollbar">
 
@@ -301,42 +301,6 @@
 
         </section>
 
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title></h4>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
         <section class="clients">
 
           <h3 class="h3 clients-title">Experience</h3>
@@ -344,46 +308,34 @@
           <ul class="clients-list has-scrollbar">
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/apple.png" alt="client logo">
-              </a>
+              <img src="./assets/images/apple.png" alt="Apple logo">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/meta-logo6.png" alt="client logo">
-              </a>
+              <img src="./assets/images/meta-logo6.png" alt="Meta logo">
             </li>
 
-            <li class="clients-item" style="margin-top: 20px;">
-              <a href="#">
-                <img src="./assets/images/madison.png" alt="client logo">
-              </a>
+            <li class="clients-item clients-item--offset">
+              <img src="./assets/images/madison.png" alt="University of Wisconsin-Madison logo">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/argonne3.png" alt="client logo" style="display: block;">
-              </a>
+              <img src="./assets/images/argonne3.png" alt="Argonne National Laboratory logo">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/sinica.png" alt="client logo">
-              </a>
+              <img src="./assets/images/sinica.png" alt="Academia Sinica logo">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/nccu.png" alt="client logo">
-              </a>
+              <img src="./assets/images/nccu.png" alt="National Chengchi University logo">
             </li>
           </ul>
 
         </section>
       </article>
 
-      <article class="resume" data-page="research">
+      <article class="resume" id="research" data-page="research">
 
         <header>
             <a href="./assets/pdf/zihengh1.pdf" class="h2 article-title">Resume [<u>PDF</u>]</a>
@@ -462,8 +414,8 @@
               <p class="timeline-text">
                 Nicholas Roberts, Sungjun Cho, Zhiqi Gao, <b>Tzu-Heng Huang</b>, Albert Wu, Gabriel Orlanski, Avi Trost, Kelly Buchanan, Aws Albarghouthi, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2604.01411" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/2041144772073591200?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2604.01411" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://x.com/zihengh1/status/2041144772073591200?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
             </li>
 
             <li class="timeline-item">
@@ -475,8 +427,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Sirajul Salekin, Javier Movellan, Frederic Sala, Manjot Bilkhu 
               </p>
-              <a href="https://arxiv.org/abs/2603.09160" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/2032506508722790852?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2603.09160" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://x.com/zihengh1/status/2032506508722790852?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
             </li>
 
             
@@ -489,7 +441,7 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>*, Aditya Goyal*, John Cooper, Frederic Sala
               </p>
-              <a href="https://github.com/SprocketLab/Domain-mixture-estimation" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://github.com/SprocketLab/Domain-mixture-estimation" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
             </li>
 
             <li class="timeline-item">
@@ -502,9 +454,9 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Manjot Bilkhu, John Cooper, Frederic Sala, Javier Movellan
               </p>
-              <a href="https://arxiv.org/abs/2501.06708" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/zihengh1/Grad-Mimic/tree/main" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://x.com/zihengh1/status/1943361027162452025?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2501.06708" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/zihengh1/Grad-Mimic/tree/main" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://x.com/zihengh1/status/1943361027162452025?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
             </li>
             
             <li class="timeline-item">
@@ -516,9 +468,9 @@
               <p class="timeline-text">
                 Jitian Zhao, Changho Shin, <b>Tzu-Heng Huang</b>, Satya Sai Srinath Namburi GNVV, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2603.00039" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/CARE" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2603.00039" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/CARE" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
             </li>
 
             <li class="timeline-item">
@@ -530,9 +482,9 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Harit Vishwakarma, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2506.10403" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/PAJAMA/tree/main" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://x.com/zihengh1/status/1946002098958860576?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2506.10403" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/PAJAMA/tree/main" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://x.com/zihengh1/status/1946002098958860576?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
             </li>
 
             <li class="timeline-item">
@@ -546,10 +498,10 @@
               <p class="timeline-text">
                 Jon Saad-Falcon, E. Kelly Buchanan, Mayee F Chen, <b>Tzu-Heng Huang</b>, Brendan McLaughlin, Tanvir Bhathal, Shang Zhu, Ben Athiwaratkun, Frederic Sala, Scott Linderman, Azalia Mirhoseini, Christopher Re
               </p>
-              <a href="https://www.arxiv.org/abs/2506.18203" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/HazyResearch/scaling-verification" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://hazyresearch.stanford.edu/blog/2025-06-18-weaver" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[BLOG]</u></a>
-              <a href="https://x.com/JonSaadFalcon/status/1937600479527317802?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://www.arxiv.org/abs/2506.18203" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/HazyResearch/scaling-verification" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://hazyresearch.stanford.edu/blog/2025-06-18-weaver" class="pub-link" target="_blank" rel="noopener noreferrer">[BLOG]</a>
+              <a href="https://x.com/JonSaadFalcon/status/1937600479527317802?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
             </li>
 
@@ -563,9 +515,9 @@
               <p class="timeline-text">
                 Jitian Zhao, Changho Shin, <b>Tzu-Heng Huang</b>, Satya Sai Srinath Namburi GNVV, Frederic Sala
               </p>
-              <a href="https://openreview.net/pdf?id=Ou53DNvjx7" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/CARE" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://openreview.net/pdf?id=Ou53DNvjx7" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/CARE" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://x.com/Changho_Shin_/status/1997342145762775270?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
             </li>
 
@@ -579,8 +531,8 @@
               <p class="timeline-text">
                 Albert Ge, <b>Tzu-Heng Huang</b>, John Cooper, Avi Trost, Ziyi Chu, Satya Sai Srinath Namburi GNVV, Ziyang Cai, Kendall Park, Nicholas Roberts, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2505.00358" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/1920558594224775242?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2505.00358" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://x.com/zihengh1/status/1920558594224775242?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
             </li>
 
@@ -594,10 +546,10 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Catherine Cao, Vaishnavi Bhargava, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2407.11004" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/Alchemist" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://sprocketlab.github.io/posts/2025/02/alchemist-automated-labeling/" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[BLOG]</u></a>
-              <a href="https://x.com/zihengh1/status/1843401287351824783?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2407.11004" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/Alchemist" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://sprocketlab.github.io/posts/2025/02/alchemist-automated-labeling/" class="pub-link" target="_blank" rel="noopener noreferrer">[BLOG]</a>
+              <a href="https://x.com/zihengh1/status/1843401287351824783?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
             </li>
 
@@ -611,8 +563,8 @@
               <p class="timeline-text">
                 Wenxuan Tan, Nicholas Roberts, <b>Tzu-Heng Huang</b>, Jitian Zhao, John Cooper, Samuel Guo, Chengyu Duan, Frederic Sala
               </p>
-              <a href="https://openreview.net/pdf?id=AzTz27n6O2" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/sparse_matrix_fine_tuning" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://openreview.net/pdf?id=AzTz27n6O2" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/sparse_matrix_fine_tuning" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
 
             </li>
 
@@ -625,8 +577,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Harit Vishwakarma, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2312.04740" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/1734435767626146209?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2312.04740" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://x.com/zihengh1/status/1734435767626146209?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
 
             </li>
@@ -640,9 +592,9 @@
               <p class="timeline-text">
                 Nicholas Roberts, Xintong Li, Dyah Adila, Sonia Cromp, <b>Tzu-Heng Huang</b>, Jitian Zhao, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2307.12226" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/loki" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://x.com/nick11roberts/status/1685096037349031936?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2307.12226" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/loki" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://x.com/nick11roberts/status/1685096037349031936?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
             </li>
 
@@ -657,8 +609,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang*</b>, Changho Shin*, Sui Jiet Tay, Dyah Adila, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2401.12225" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://x.com/zihengh1/status/1708990986104254509?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2401.12225" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://x.com/zihengh1/status/1708990986104254509?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
             </li>
 
@@ -672,8 +624,8 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Catherine Cao, Spencer Schoenberg, Harit Vishwakarma, Nicholas Roberts, Frederic Sala
               </p>
-              <a href="https://www.arxiv.org/abs/2502.12366" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/Alchemist" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
+              <a href="https://www.arxiv.org/abs/2502.12366" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/Alchemist" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
 
 
             </li>
@@ -687,10 +639,10 @@
               <p class="timeline-text">
                 Nicholas Roberts, Xintong Li, <b>Tzu-Heng Huang</b>, Dyah Adila, Spencer Schoenberg, Cheng-Yu Liu, Lauren Pick, Haotian Ma, Aws Albarghouthi, Frederic Sala
               </p>
-              <a href="https://arxiv.org/abs/2208.14362" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
-              <a href="https://github.com/SprocketLab/AutoWS-Bench-101" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[CODE]</u></a>
-              <a href="https://sprocketlab.github.io/posts/2022/11/autows-bench-101/" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[BLOG]</u></a>
-              <a href="https://x.com/nick11roberts/status/1596252979778166788?s=20" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[X POST]</u></a>
+              <a href="https://arxiv.org/abs/2208.14362" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
+              <a href="https://github.com/SprocketLab/AutoWS-Bench-101" class="pub-link" target="_blank" rel="noopener noreferrer">[CODE]</a>
+              <a href="https://sprocketlab.github.io/posts/2022/11/autows-bench-101/" class="pub-link" target="_blank" rel="noopener noreferrer">[BLOG]</a>
+              <a href="https://x.com/nick11roberts/status/1596252979778166788?s=20" class="pub-link" target="_blank" rel="noopener noreferrer">[X POST]</a>
 
 
             </li>
@@ -704,7 +656,7 @@
               <p class="timeline-text">
                 <b>Tzu-Heng Huang</b>, Cheng-Hsien Tsai, Man-Kwan Shan
               </p>
-              <a href="https://dl.acm.org/doi/pdf/10.1145/3386901.3396606" style="color: white; display: inline-block; margin-right: 10px;" target="_blank" rel="noopener noreferrer"><u>[PDF]</u></a>
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3386901.3396606" class="pub-link" target="_blank" rel="noopener noreferrer">[PDF]</a>
 
 
             </li>
