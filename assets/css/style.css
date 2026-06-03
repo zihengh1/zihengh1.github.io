@@ -113,6 +113,15 @@ li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
 
+[hidden] {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 button {
   font: inherit;
   background: none;
@@ -128,9 +137,15 @@ button {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html {
+  font-family: var(--ff-poppins);
+  -webkit-text-size-adjust: 100%;
+}
 
-body { background: var(--smoky-black); }
+body {
+  background: var(--smoky-black);
+  overflow-x: hidden;
+}
 
 
 /*-----------------------------------*\
@@ -269,19 +284,32 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  min-width: 0;
 }
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  flex: 0 0 80px;
+}
+
+.avatar-box img {
+  width: 80px;
+  border-radius: inherit;
+}
+
+.info-content {
+  min-width: 0;
 }
 
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
+  line-height: 1.25;
   letter-spacing: -0.25px;
   margin-bottom: 10px;
+  overflow-wrap: anywhere;
 }
 
 .info-content .title {
@@ -289,9 +317,11 @@ main {
   background: var(--onyx);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  width: max-content;
+  width: fit-content;
+  max-width: 100%;
   padding: 3px 12px;
   border-radius: 8px;
+  line-height: 1.35;
 }
 
 .info_more-btn {
@@ -344,10 +374,11 @@ main {
 }
 
 .contact-item {
-  min-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
 }
 
 .contact-info {
@@ -365,6 +396,7 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+  overflow-wrap: anywhere;
 }
 
 .contact-info address { font-style: normal; }
@@ -532,6 +564,23 @@ main {
   .news-date {
     width: max-content;
   }
+
+  .timeline-list {
+    margin-left: 30px;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    left: -22px;
+  }
+
+  .timeline-item::after {
+    left: -25px;
+  }
+
+  .pub-link {
+    margin-top: 4px;
+    margin-bottom: 2px;
+  }
 }
 
 
@@ -567,6 +616,25 @@ main {
   display: block;
   width: 100%;
   transition: var(--transition-1);
+}
+
+.clients-label {
+  display: grid;
+  place-items: center;
+  min-height: 88px;
+  padding: 14px;
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  line-height: 1.35;
+  text-align: center;
+  background: var(--bg-gradient-jet);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+}
+
+.clients-label[hidden] {
+  display: none;
 }
 
 /*-----------------------------------*\
@@ -608,6 +676,7 @@ main {
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .timeline-item:not(:last-child)::before {
@@ -637,6 +706,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 
